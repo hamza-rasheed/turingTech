@@ -1,5 +1,8 @@
 # :phone: TuringTech - Frontend technical test
 
+Loom: https://www.loom.com/share/229ece2b014c46da955e433689383257
+Deployment Link: https://turing-tech-test-one.vercel.app/
+
 This test is a part of our hiring process at TuringTech for the Frontend Engineer position. It should take you between 6 to 8 hours, depending on your experience, to implement the minimal version. But we thought about a few bonuses, so feel free to spend some time on them if you want.
 
 _Feel free to apply on our [Careers Page](https://www.turing-tech.org/careers?github=true) and email us at hr@turingtechnologies.org._
