@@ -1,8 +1,10 @@
 # :phone: TuringTech - Frontend technical test
 
+Loom: https://www.loom.com/share/229ece2b014c46da955e433689383257
+
 This test is a part of our hiring process at TuringTech for the Frontend Engineer position. It should take you between 6 to 8 hours, depending on your experience, to implement the minimal version. But we thought about a few bonuses, so feel free to spend some time on them if you want.
 
-*Feel free to apply on our [Careers Page](https://www.turing-tech.org/careers?github=true) and email us at hr@turingtechnologies.org.*
+_Feel free to apply on our [Careers Page](https://www.turing-tech.org/careers?github=true) and email us at hr@turingtechnologies.org._
 
 ## Context
 
@@ -12,9 +14,10 @@ TuringTech is on a mission to revolutionize the business phone industry! This te
 
 The application can be built using any Frontend Framework/Library such as React, Angular, Vue. We do use React (especially Next.js) on most of our projects.
 
-For the purpose of this test, you can use Bootstrap, Material or Ant Design for the base design library. Copy Styling of different components such as buttons, lists, fields etc. from the assets in the `/design-files` folder. 
+For the purpose of this test, you can use Bootstrap, Material or Ant Design for the base design library. Copy Styling of different components such as buttons, lists, fields etc. from the assets in the `/design-files` folder.
 
 This application must:
+
 - Display a paginated list of calls that you’ll retrieve from the API.
 - Display the call details view if the user clicks on a call. the view should display all the data related to the call itself.
 - Be able to archive one or several calls
@@ -22,6 +25,7 @@ This application must:
 - Handle real-time events (Whenever a call is archived or a note is being added to a call, these changes should be reflected on the UI immediately)
 
 Bonus:
+
 - Use Typescript and Next.js
 - Provide filtering feature, to filter calls by type (archived, missed …)
 - Use GraphQL to fetch data
@@ -32,7 +36,8 @@ Bonus:
 ## APIs
 
 There are 2 versions of the APIs for this test, so you can choose between:
-- REST API or 
+
+- REST API or
 - GraphQL API.
 
 Both expose the same data, so it’s really about which one you prefer.
@@ -203,6 +208,7 @@ All the endpoints are protected by a middleware that checks if the user is authe
 ```
 
 Response:
+
 ```
 {
   nodes: [Call!]
@@ -224,6 +230,7 @@ Response:
 ```
 
 Response
+
 ```
 {
   id: String!
@@ -292,7 +299,8 @@ This event will be called each time you add a note or archive a call.
 
 Note that, you need to use Pusher SDK in order to listen for this event.
 
-Because this channel is private you need to authenticate first, to do that, you need to make 
+Because this channel is private you need to authenticate first, to do that, you need to make
+
 - `APP_AUTH_ENDPOINT` point to: `https://frontend-test-api.aircall.dev/pusher/auth`
 - set `APP_KEY` to `d44e3d910d38a928e0be`
 - and set `APP_CLUSTER` to `eu`
@@ -304,6 +312,7 @@ The REST API can return a different type of errors:
 `400` `BAD_REQUEST` error, happens when you provide some data which doesn't respect a given shape.
 
 Example
+
 ```
 {
   "statusCode": 400,
@@ -318,6 +327,7 @@ Example
 `401` `UNAUTHORIZED` error, happens when the user is not authorized to perform an action or if his token is no longer valid
 
 Example
+
 ```
 {
   "statusCode": 401,
@@ -328,6 +338,7 @@ Example
 `404` `NOT_FOUND` error, happens when the user requests a resource that no longer exists.
 
 Example
+
 ```
 {
   "statusCode": 404,
@@ -335,14 +346,17 @@ Example
   "error": "Not Found"
 }
 ```
+
 ## Does your UI looks like the image below?
+
 ### If YES then you're doing better than 60% of the applicants.
 
 ![Calls List](https://user-images.githubusercontent.com/88223175/184556209-23ed6342-5f9b-4b7a-b243-5cde59704d3b.png)
 
 ## Code Submit
-Please organize, design, test and document your code as if it were going into production, create a loom video and send us a [pull request](https://opensource.com/article/19/7/create-pull-request-github). 
 
-We will review it and get back to you in order to talk about your code! 
+Please organize, design, test and document your code as if it were going into production, create a loom video and send us a [pull request](https://opensource.com/article/19/7/create-pull-request-github).
+
+We will review it and get back to you in order to talk about your code!
 
 All the best and happy coding.
